@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo "selamat datang";
+});
+Route::get('/about', function (){
+    echo "NIM : 2031710114 <br>";
+    echo "NAMA : Mohamad Zidfi Rohmatu Romadhon";
+});
+Route::get('/articles/{id}', function($id){
+    echo "Halaman Artikel Dengan ID", $id;
 });
